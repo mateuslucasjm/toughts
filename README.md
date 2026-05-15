@@ -4,7 +4,7 @@
 
 ---
 
-## Visão geral do produto
+## Visão geral
 
 O **Toughts** organiza o ciclo de vida de um pensamento em três etapas principais: **descoberta** (visualização pública na página inicial), **autenticação** (acesso seguro à conta) e **gestão** (criação, edição e exclusão no painel do usuário). A separação entre área pública e área autenticada garante que apenas o autor modifique seus registros, enquanto o feed global permanece acessível sem login.
 
