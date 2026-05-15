@@ -24,7 +24,8 @@ export default function Register() {
 
   return (
     <div className="auth-container">
-      <h2>Registrar</h2>
+      <h2>Criar conta</h2>
+      <p className="auth-subtitle">Junte-se a comunidade e compartilhe seus pensamentos.</p>
       {error && <div className="message">{error}</div>}
       <form onSubmit={handleSubmit}>
         <div className="form-control">
@@ -71,13 +72,9 @@ export default function Register() {
             required
           />
         </div>
-        <input
-          type="submit"
-          value="Cadastrar"
-          style={{ display: "block", margin: "auto" }}
-        />
-        <p style={{ textAlign: "center", marginTop: "1.5rem" }}>
-          Ja tem conta? <Link to="/login">Clique aqui!</Link>
+        <input type="submit" value="Cadastrar" className="auth-submit" />
+        <p className="auth-footer">
+          Ja tem conta? <Link to="/login">Entrar</Link>
         </p>
       </form>
     </div>

@@ -28,8 +28,9 @@ export default function App() {
   return (
     <BrowserRouter>
       <AuthProvider>
+        <div className="app-layout">
         <Navbar />
-        <div className="container">
+        <main className="container">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
@@ -61,8 +62,9 @@ export default function App() {
             <Route path="/logout" element={<LogoutRedirect />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
-        </div>
+        </main>
         <Footer />
+        </div>
       </AuthProvider>
     </BrowserRouter>
   );

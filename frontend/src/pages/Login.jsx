@@ -23,6 +23,7 @@ export default function Login() {
   return (
     <div className="auth-container">
       <h2>Entrar</h2>
+      <p className="auth-subtitle">Bem-vindo de volta. Acesse sua conta.</p>
       {error && <div className="message">{error}</div>}
       <form onSubmit={handleSubmit}>
         <div className="form-control">
@@ -47,13 +48,9 @@ export default function Login() {
             required
           />
         </div>
-        <input
-          type="submit"
-          value="Entrar"
-          style={{ display: "block", margin: "auto" }}
-        />
-        <p style={{ textAlign: "center", marginTop: "1.5rem" }}>
-          Nao tem uma conta? <Link to="/register">Clique aqui!</Link>
+        <input type="submit" value="Entrar" className="auth-submit" />
+        <p className="auth-footer">
+          Nao tem uma conta? <Link to="/register">Criar conta</Link>
         </p>
       </form>
     </div>

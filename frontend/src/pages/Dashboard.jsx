@@ -37,7 +37,7 @@ export default function Dashboard() {
     <div className="dashboard">
       <div className="title-container">
         <h2>Dashboard</h2>
-        <Link to="/add" className="btn">Criar Pensamento</Link>
+        <Link to="/add" className="btn" style={{color: "#fff"}}>+ Criar pensamento</Link>
       </div>
       <h3>Seus pensamentos</h3>
       {loading ? (
@@ -49,8 +49,8 @@ export default function Dashboard() {
               <li key={t.id}>
                 <span className="label">{t.title}</span>
                 <span className="actions">
-                  <Link to={`/edit/${t.id}`} className="btn">Editar</Link>
-                  <button className="btn" onClick={() => handleRemove(t.id)}>Excluir</button>
+                  <Link to={`/edit/${t.id}`} className="btn btn-ghost btn-sm">Editar</Link>
+                  <button type="button" className="btn btn-ghost btn-sm" onClick={() => handleRemove(t.id)}>Excluir</button>
                 </span>
               </li>
             ))}

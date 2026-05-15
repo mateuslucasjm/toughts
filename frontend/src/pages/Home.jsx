@@ -56,28 +56,30 @@ export default function Home() {
             )}
           </>
         ) : (
-          <h1>Conheca alguns dos nossos <span>Pensamentos</span>:</h1>
+          <h1>Conheça alguns dos nossos <span>Pensamentos</span>:</h1>
         )}
-        <form onSubmit={handleSearch}>
-          <input
-            type="text"
-            value={localSearch}
-            onChange={(e) => setLocalSearch(e.target.value)}
-            placeholder="Esta buscando por algo?"
-          />
-          <input type="submit" className="btn" value="Buscar" />
-        </form>
-        <div className="order-container">
-          <span>Ordernar por:</span>
-          <button type="button" onClick={() => handleOrder("new")}>
-            <i className="bi bi-arrow-up"></i>
-          </button>
-          <button type="button" onClick={() => handleOrder("old")}>
-            <i className="bi bi-arrow-down"></i>
-          </button>
-          <button type="button" className="btn-clear" onClick={clearSearch}>
-            Limpar
-          </button>
+        <div className="home-search-tools">
+          <form onSubmit={handleSearch}>
+            <input
+              type="text"
+              value={localSearch}
+              onChange={(e) => setLocalSearch(e.target.value)}
+              placeholder="Esta buscando por algo?"
+            />
+            <input type="submit" className="btn" value="Buscar" />
+          </form>
+          <div className="order-container">
+            <span>Ordernar por:</span>
+            <button type="button" onClick={() => handleOrder("new")} aria-label="Mais recentes">
+              <i className="bi bi-arrow-up"></i>
+            </button>
+            <button type="button" onClick={() => handleOrder("old")} aria-label="Mais antigos">
+              <i className="bi bi-arrow-down"></i>
+            </button>
+            <button type="button" className="btn-clear" onClick={clearSearch}>
+              Limpar
+            </button>
+          </div>
         </div>
       </div>
       <div className="toughts-container">
