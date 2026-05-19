@@ -1,12 +1,12 @@
-# Toughts
+# Thoughts
 
-**Toughts** é uma aplicação web fullstack para registro, consulta e gestão de pensamentos curtos. O sistema permite que usuários autenticados publiquem conteúdo próprio e que visitantes explorem o acervo público com recursos de busca e ordenação. Este documento apresenta a visão do produto, a interface do usuário, a arquitetura do repositório e o procedimento de configuração e execução do ambiente de desenvolvimento.
+**Thoughts** é uma aplicação web fullstack para registro, consulta e gestão de pensamentos curtos. O sistema permite que usuários autenticados publiquem conteúdo próprio e que visitantes explorem o acervo público com recursos de busca e ordenação. Este documento apresenta a visão do produto, a interface do usuário, a arquitetura do repositório e o procedimento de configuração e execução do ambiente de desenvolvimento.
 
 ---
 
 ## Visão geral
 
-O **Toughts** organiza o ciclo de vida de um pensamento em três etapas principais: **descoberta** (visualização pública na página inicial), **autenticação** (acesso seguro à conta) e **gestão** (criação, edição e exclusão no painel do usuário). A separação entre área pública e área autenticada garante que apenas o autor modifique seus registros, enquanto o feed global permanece acessível sem login.
+O **Thoughts** organiza o ciclo de vida de um pensamento em três etapas principais: **descoberta** (visualização pública na página inicial), **autenticação** (acesso seguro à conta) e **gestão** (criação, edição e exclusão no painel do usuário). A separação entre área pública e área autenticada garante que apenas o autor modifique seus registros, enquanto o feed global permanece acessível sem login.
 
 | Camada      | Tecnologia | Responsabilidade                                      |
 | ----------- | ---------- | ----------------------------------------------------- |
